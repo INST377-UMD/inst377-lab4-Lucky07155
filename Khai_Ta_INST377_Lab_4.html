@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Khai Ta INST377 Lab 4</title>
+        <link rel="stylesheet" href="Khai_Ta_INST377_Lab_4.css">
+        <script src="Khai_Ta_INST377_Lab_4.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <h1 id="header">INST377 - Lab 4</h1>
+
+        <!-- FOUR SECTIONS -->
+        <div class="main-container">
+
+            <!-- MAIN CONTENT -->
+            <!-- ALERT AREA -->
+            <div class="contentArea">
+                <form>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+                    <button onClick="alertMe()"> Alert Me!</button>
+                </form>
+            </div>
+
+            <!-- COLOR CHANGE AREA -->
+            <div class="contentArea">
+                <button onclick="changeColor()">Change color</button>
+            </div>
+
+            <!-- VALIDATE TEXT AREA -->
+            <div class="contentArea">
+                <form name="textTest" onsubmit="return(formValidation())">
+                    <label for="text">Text Tester: </label>
+                    <input type="text" name="textTest" id="textTester">
+                    <button onclick="testText()">Validate Text</button>
+                </form>
+            </div>
+
+            <!-- ADD TEXT AREA -->
+             <div class="contentArea">
+                <button onclick="addText()">Add Text</button>
+             </div>
+        </div>
+    </body>
+</html>
